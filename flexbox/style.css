@@ -6,38 +6,14 @@
 
 /*Classes gerais - Framework*/
 
-.text-white {
-	color: white;
-}
-
-.gold {
-	background-color: gold;
-}
-
-.light-blue {
-	background-color: #00A3D9;
-}
-
-section.container {
-	width: 100%;
-}
-
-div.flex {
-	max-width: 960px;
-	padding: 0 2%;
-	margin: 0 auto;
-	display: flex;
-
-}
-
-div.w50 {
-	width: 50%;
-}
-
 /*Classes específicas para o nosso site*/
 
 header.topo-site {
 	padding:20px 0;
+}
+
+.slider {
+	min-height: 600px;
 }
 
 .logo {
@@ -57,11 +33,31 @@ header.topo-site a {
 	text-decoration: none;
 }
 
-.left {
-	text-align: left;
+.slider p {
+	font-size: 23px;
+	color: white;
+	border-bottom: 4px solid white;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transition: translateY(-50%);
 }
 
-.right {
-	text-align: right;
+.promo {
+	padding: 40px 0;
+}
+
+/*Quando o tamanho da tela for menor ...*/
+@media screen and ( max-width: 768px ) {
+
+	div.w50, div.w33 {
+		width: 100%;
+	}
+
+	.left, .right, .center {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
 }
 
