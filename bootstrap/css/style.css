@@ -1,0 +1,37 @@
+h2.logo {
+	color: white;
+	margin: 0;
+}
+
+.menu {
+	background-color: rgba(100, 100, 100);
+	padding: 20px 0;
+}
+
+.menu-list {
+	position: relative;
+	top: 10px;
+}
+
+.menu-list ul {
+	display: inline-block;
+}
+
+.menu-list li {
+	font-size:0 10px;
+	display: inline;
+	text-align: left;
+}
+
+.menu-list a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu-list-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+}
